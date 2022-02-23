@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="516.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="billGenerator.BillGenerator">
+   <children>
+      <Label alignment="CENTER" layoutX="-4.0" layoutY="-1.0" prefHeight="82.0" prefWidth="524.0" style="-fx-background-color: #9cce9e;" text="Bill Generator">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="109.0" text="Customer's Mobile" />
+      <TextField fx:id="txtMobile" layoutX="118.0" layoutY="127.0" prefHeight="26.0" prefWidth="192.0" />
+      <Label layoutX="118.0" layoutY="169.0" text="Distance" />
+      <TextField fx:id="txtDistance" layoutX="118.0" layoutY="187.0" prefHeight="26.0" prefWidth="192.0" />
+      <Label layoutX="118.0" layoutY="236.0" text="No. of Days" />
+      <TextField fx:id="txtDays" layoutX="118.0" layoutY="254.0" prefHeight="26.0" prefWidth="192.0" />
+      <Label layoutX="118.0" layoutY="301.0" text="Rate/KM" />
+      <TextField fx:id="txtRate" layoutX="118.0" layoutY="319.0" prefHeight="26.0" prefWidth="192.0" />
+      <Button layoutX="101.0" layoutY="429.0" mnemonicParsing="false" onAction="#btnSave" prefHeight="38.0" prefWidth="224.0" style="-fx-background-color: #9cce9e;" text="SAVE">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.4470588266849518" green="0.6823529601097107" blue="0.5607843399047852" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button layoutX="218.0" layoutY="485.0" mnemonicParsing="false" onAction="#btnCalculate" prefHeight="38.0" prefWidth="107.0" style="-fx-background-color: #9cce9e;" text="CALCULATE">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.4470588266849518" green="0.6823529601097107" blue="0.5607843399047852" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Label layoutX="118.0" layoutY="360.0" text="Amount" />
+      <TextField fx:id="txtAmount" layoutX="118.0" layoutY="378.0" prefHeight="26.0" prefWidth="192.0" />
+      <Button layoutX="101.0" layoutY="485.0" mnemonicParsing="false" onAction="#btnUpdate" prefHeight="38.0" prefWidth="107.0" style="-fx-background-color: #9cce9e;" text="UPDATE">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.4470588266849518" green="0.6823529601097107" blue="0.5607843399047852" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button layoutX="340.0" layoutY="121.0" mnemonicParsing="false" onAction="#btnFetchBill" prefHeight="38.0" prefWidth="107.0" style="-fx-background-color: #9cce9e;" text="FETCH BILL">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.4470588266849518" green="0.6823529601097107" blue="0.5607843399047852" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

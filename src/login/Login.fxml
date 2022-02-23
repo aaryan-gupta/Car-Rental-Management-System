@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="549.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.Login">
+   <children>
+      <Label alignment="CENTER" layoutX="1.0" prefHeight="94.0" prefWidth="549.0" style="-fx-background-color: #9cce9e;" text="Login">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="125.0" text="Login ID" />
+      <TextField fx:id="txtLogin" layoutX="118.0" layoutY="143.0" />
+      <Label layoutX="118.0" layoutY="180.0" text="Password" />
+      <TextField fx:id="txtPwd" layoutX="118.0" layoutY="198.0" />
+      <Button layoutX="117.0" layoutY="256.0" mnemonicParsing="false" onAction="#doLogin" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #9cce9e;" text="SIGN IN">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.4470588266849518" green="0.6823529601097107" blue="0.5607843399047852" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <ImageView fitHeight="180.0" fitWidth="150.0" layoutX="341.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Docs/javafx%20docs/Road%20sign-amico.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

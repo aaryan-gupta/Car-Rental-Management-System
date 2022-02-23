@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="641.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customersControlPanel.Customers">
+   <children>
+      <Label layoutX="134.0" layoutY="27.0" prefHeight="58.0" prefWidth="527.0" style="-fx-font-size: 40;" text="Customers Control Panel" />
+      <TextField fx:id="txtName" layoutX="147.0" layoutY="126.0" />
+      <Label layoutX="147.0" layoutY="108.0" text="NAME" />
+      <TextField fx:id="txtMobile" layoutX="381.0" layoutY="125.0" />
+      <Label layoutX="381.0" layoutY="107.0" text="MOBILE NUMBER" />
+      <Label layoutX="147.0" layoutY="176.0" text="ADDRESS" />
+      <Label layoutX="380.0" layoutY="429.0" text="CAR REQUIREMENT" />
+      <Label layoutX="147.0" layoutY="281.0" text="DATE" />
+      <TextField fx:id="txtTime" layoutX="381.0" layoutY="299.0" />
+      <Label layoutX="381.0" layoutY="281.0" text="TIME" />
+      <TextField fx:id="txtDestination" layoutX="146.0" layoutY="379.0" prefHeight="26.0" prefWidth="382.0" />
+      <Label layoutX="147.0" layoutY="361.0" text="DESTINATION" />
+      <TextField fx:id="txtDays" layoutX="147.0" layoutY="448.0" />
+      <Label layoutX="147.0" layoutY="430.0" text="NO. OF DAYS" />
+      <TextArea fx:id="txtAddress" layoutX="147.0" layoutY="194.0" prefHeight="58.0" prefWidth="381.0" />
+      <Button layoutX="592.0" layoutY="125.0" mnemonicParsing="false" onAction="#doSearch" prefHeight="26.0" prefWidth="75.0" text="SEARCH" />
+      <Button layoutX="346.0" layoutY="521.0" mnemonicParsing="false" onAction="#doDelete" prefHeight="26.0" prefWidth="75.0" text="DELETE" />
+      <Button layoutX="249.0" layoutY="521.0" mnemonicParsing="false" onAction="#doUpdate" prefHeight="26.0" prefWidth="75.0" text="UPDATE" />
+      <Button layoutX="146.0" layoutY="521.0" mnemonicParsing="false" onAction="#doSave" prefHeight="26.0" prefWidth="75.0" text="SAVE" />
+      <DatePicker fx:id="txtDate" layoutX="149.0" layoutY="299.0" prefHeight="26.0" prefWidth="166.0" />
+      <ComboBox fx:id="comboCar" layoutX="381.0" layoutY="447.0" prefWidth="150.0" />
+      <Button layoutX="454.0" layoutY="521.0" mnemonicParsing="false" onAction="#doClear" prefHeight="26.0" prefWidth="75.0" text="CLEAR" />
+   </children>
+</AnchorPane>

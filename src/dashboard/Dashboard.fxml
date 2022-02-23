@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.Dashboard">
+   <children>
+      <Label alignment="CENTER" layoutY="-1.0" prefHeight="70.0" prefWidth="753.0" style="-fx-background-color: #9cce9e;" text="DASHBOARD">
+         <font>
+            <Font name="SansSerif Bold" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="43.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="174.0" layoutX="58.0" layoutY="125.0" onMouseClicked="#doDriversProfile" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@City%20driver-amico.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="302.0" layoutY="500.0" prefHeight="18.0" prefWidth="134.0" text="Customer's Record" />
+      <ImageView fitHeight="162.0" fitWidth="150.0" layoutX="280.0" layoutY="125.0" onMouseClicked="#doDriversRecord" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Customer%20Survey-amico.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="84.0" layoutY="500.0" prefHeight="18.0" prefWidth="150.0" text="Customer's Profile" />
+      <Label layoutX="534.0" layoutY="293.0" prefHeight="18.0" prefWidth="118.0" text="Bill Generator" />
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="495.0" layoutY="93.0" onMouseClicked="#doBillGenerator">
+         <image>
+            <Image url="@Credit%20card-amico.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="162.0" fitWidth="187.0" layoutX="495.0" layoutY="335.0" onMouseClicked="#doBillCollector">
+         <image>
+            <Image url="@Receipt-amico.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="161.0" layoutX="280.0" layoutY="341.0" onMouseClicked="#doCustomersRecord">
+         <image>
+            <Image url="@Personal%20files-amico.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="312.0" layoutY="293.0" prefHeight="18.0" prefWidth="118.0" text="Driver's Record" />
+      <Label layoutX="536.0" layoutY="500.0" prefHeight="18.0" prefWidth="117.0" text="Bill Collector" />
+      <ImageView fitHeight="150.0" fitWidth="161.0" layoutX="63.0" layoutY="341.0" onMouseClicked="#doCustomersProfile">
+         <image>
+            <Image url="@Road%20sign-amico.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="660.0" layoutY="54.0" prefHeight="18.0" prefWidth="45.0" text="logout" />
+      <ImageView fitHeight="40.0" fitWidth="45.0" layoutX="660.0" layoutY="14.0" onMouseClicked="#doLogout">
+         <image>
+            <Image url="@PngItem_2854727%20(1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="90.0" layoutY="293.0" prefHeight="18.0" prefWidth="118.0" text="Driver's Profile" />
+   </children>
+</AnchorPane>

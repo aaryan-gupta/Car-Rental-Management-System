@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="437.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tripPlanner.Trip">
+   <children>
+      <Label alignment="CENTER" prefHeight="68.0" prefWidth="437.0" style="-fx-background-color: #9cce9e;" text="Trip Calculator">
+         <font>
+            <Font name="SansSerif Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="102.0" text="Driver's Mobile Number" />
+      <ComboBox fx:id="comboDriver" layoutX="70.0" layoutY="120.0" prefHeight="26.0" prefWidth="182.0" />
+      <TextField fx:id="txtCustomer" layoutX="71.0" layoutY="195.0" prefHeight="26.0" prefWidth="182.0" />
+      <Label layoutX="70.0" layoutY="177.0" text="Customer's Mobile Number" />
+      <TextField fx:id="txtCar" layoutX="72.0" layoutY="265.0" prefHeight="26.0" prefWidth="182.0" />
+      <Label layoutX="71.0" layoutY="248.0" text="Car Required" />
+      <TextField fx:id="txtDays" layoutX="72.0" layoutY="341.0" prefHeight="26.0" prefWidth="182.0" />
+      <Label layoutX="71.0" layoutY="324.0" text="No. of Days" />
+      <TextField fx:id="txtRate" layoutX="70.0" layoutY="418.0" prefHeight="26.0" prefWidth="182.0" />
+      <Label layoutX="70.0" layoutY="400.0" text="Rate/KM" />
+      <Button layoutX="71.0" layoutY="468.0" mnemonicParsing="false" onAction="#doSave" prefHeight="34.0" prefWidth="70.0" style="-fx-background-color: #9cce9e;" text="SAVE">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.44600388407707214" green="0.6842105388641357" blue="0.5611370801925659" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Button layoutX="339.0" layoutY="468.0" mnemonicParsing="false" onAction="#doClear" prefHeight="34.0" prefWidth="70.0" style="-fx-background-color: #9cce9e;" text="CLEAR">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.44600388407707214" green="0.6842105388641357" blue="0.5611370801925659" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Button layoutX="153.0" layoutY="468.0" mnemonicParsing="false" onAction="#doUpdate" prefHeight="34.0" prefWidth="92.0" style="-fx-background-color: #9cce9e;" text="UPDATE">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.44600388407707214" green="0.6842105388641357" blue="0.5611370801925659" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Button layoutX="259.0" layoutY="468.0" mnemonicParsing="false" onAction="#doDelete" prefHeight="34.0" prefWidth="70.0" style="-fx-background-color: #9cce9e;" text="DELETE">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.44600388407707214" green="0.6842105388641357" blue="0.5611370801925659" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Button layoutX="284.0" layoutY="115.0" mnemonicParsing="false" onAction="#doSearch" prefHeight="34.0" prefWidth="105.0" style="-fx-background-color: #9cce9e;" text="SEARCH">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.3365302085876465" green="0.5473684072494507" blue="0.4665471017360687" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+   </children>
+</AnchorPane>
